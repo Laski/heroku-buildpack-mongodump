@@ -42,7 +42,7 @@ topic "Updating apt caches"
 apt-get $APT_OPTIONS update | indent
 
 topic "Fetching mongo tools"
-apt-get $APT_OPTIONS -y --force-yes -d install --reinstall --no-install-recommends mongodb-org-tools=3.0.6 | indent
+apt-get $APT_OPTIONS -y --force-yes -d install --reinstall --no-install-recommends mongodb-org-tools=3.6.3 | indent
 
 topic "Fetching deb packages"
 for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
